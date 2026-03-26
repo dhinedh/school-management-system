@@ -1,0 +1,290 @@
+.container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statsCard {
+  padding: 1.5rem;
+}
+
+.statsLabel {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+.statsValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.statsValue.warning {
+  color: #ef4444;
+}
+
+.trend {
+  font-size: 0.75rem;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.trend.down {
+  color: #ef4444;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+.riskSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tableHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.riskList {
+  display: flex;
+  flex-direction: column;
+}
+
+.rItem {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  gap: 2rem;
+}
+
+.rInfo {
+  width: 200px;
+}
+
+.rHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.rName {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.rGrade {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+.rFactor {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.rDues {
+  width: 100px;
+}
+
+.duesLabel {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
+.duesValue {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.rProb {
+  flex: 1;
+}
+
+.probBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.probBadge.high { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.probBadge.moderate { background: rgba(245, 158, 11, 0.1); color: #d97706; }
+.probBadge.low { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+
+.rStatus {
+  width: 150px;
+}
+
+.actionBtn {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sidebarSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.insightCard {
+  padding: 1.5rem;
+}
+
+.recommendContent {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.recommendContent p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.triggerBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forecastCard {
+  padding: 1.5rem;
+}
+
+.forecastItem {
+  margin-top: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.forecastItem span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+.forecastItem p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.chartPlaceholder {
+  height: 100px;
+  margin-top: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-tertiary);
+  font-size: 0.7rem;
+}
+
+/* System-Generated Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1.25rem;
+  }
+
+  .actions {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+  }
+
+  .actions button, .actions .btn {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .mainGrid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Specific column stacking for common patterns */
+  .leftCol, .rightCol {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+  }
+}

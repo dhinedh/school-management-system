@@ -1,0 +1,251 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerMain {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.iconBox {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+}
+
+.title {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.statsCard {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.statsLabel {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.statsValue {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.submissionSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.sectionHeader {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 260px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.submissionList {
+    display: flex;
+    flex-direction: column;
+}
+
+.subItem {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.subItem:hover {
+    background: #fdfdff;
+}
+
+.subIcon {
+    width: 44px;
+    height: 44px;
+    background: #f0f0f7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.subInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1.5;
+}
+
+.subTitle {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.subMeta {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.subStatus {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.statusBadge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.graded { background: #e6fcf5; color: #0ca678; }
+.pending { background: #fff4e6; color: #fd7e14; }
+
+.subScore {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.reviewBtn {
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feedbackCard {
+    padding: 1.5rem;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.insightDesc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin: 0.75rem 0;
+}
+
+.tagGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.errorTag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    background: #ecfdf5;
+    color: #065f46;
+    border-radius: 4px;
+}
+
+.insightBtn {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 0.85rem;
+}
+
+.configCard {
+    padding: 1.5rem;
+}
+
+.rubricList {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.rubricItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.manageBtn {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .mainGrid, .statsRow {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,240 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.statsCard {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.statsLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.statsValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.staffDirectory {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tableHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 260px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background: #fafafa;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 0.8rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.staffInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.name {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.email {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.statusBadge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.active { background: #e6fcf5; color: #0ca678; }
+.onleave { background: #fff4e6; color: #fd7e14; }
+
+.moreBtn {
+    color: var(--text-tertiary);
+}
+
+.leaveSection {
+    padding: 1.5rem;
+}
+
+.leaveList {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.leaveItem {
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.leaveRequester {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.leaveType {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    margin-bottom: 12px;
+}
+
+.leaveActions {
+    display: flex;
+    gap: 8px;
+}
+
+.approveBtn {
+    background: #10b981;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.rejectBtn {
+    background: #f1f3f5;
+    color: #495057;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.pendingBadge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fd7e14;
+    background: #fff4e6;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.appraisalCard {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 12px;
+}
+
+.appraisalCard h4 {
+    margin-bottom: 4px;
+}
+
+.appraisalCard p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.progressBar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    margin: 1rem 0 4px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--secondary-color);
+}
+
+.progressText {
+    font-size: 0.75rem !important;
+    text-align: right;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid, .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,232 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.headerMain {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.iconBox {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #10b981, #06b6d4);
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.liveFeed {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feedHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.pulse {
+    width: 10px;
+    height: 10px;
+    background: #ef4444;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.cameraView {
+    flex: 1;
+    min-height: 300px;
+    background: #000;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scanner {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 2px;
+    background: #06b6d4;
+    box-shadow: 0 0 15px #06b6d4;
+    animation: scan 3s infinite linear;
+}
+
+@keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+
+.faceBox {
+    width: 150px;
+    height: 180px;
+    border: 2px solid #06b6d4;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.faceBox p {
+    font-size: 0.7rem;
+    color: #06b6d4;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.feedActions {
+    display: flex;
+    gap: 1rem;
+}
+
+.controlBtn {
+    flex: 1;
+    background: #f1f3f5;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.logSection {
+    padding: 2rem;
+}
+
+.logList {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #eee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.logItem {
+    padding: 1.25rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logTime {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    font-weight: 600;
+    width: 70px;
+}
+
+.logMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.logMain strong {
+    font-size: 0.95rem;
+}
+
+.logMain span {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.logMeta {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.status.success { color: #059669; }
+.status.warning { color: #ea580c; }
+
+.confidence {
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+}
+
+.analytics {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat strong {
+    font-size: 1.5rem;
+}
+
+.stat span {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+    .mainGrid {
+        grid-template-columns: 1fr;
+    }
+}

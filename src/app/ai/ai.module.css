@@ -1,0 +1,184 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.aiBadge {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.title {
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.systemStatus {
+    display: flex;
+    gap: 2rem;
+}
+
+.statusItem {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.statusItem span {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.statusItem strong {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.aiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.aiCard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent;
+}
+
+.aiCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-lg);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconBox {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.statusBadge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.active { background: #e6fcf5; color: #0ca678; }
+.beta { background: #fff4e6; color: #fd7e14; }
+.intraining { background: #f1f3f5; color: #495057; }
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.cardDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.launchBtn {
+    margin-top: 1rem;
+    background: #f8f9fa;
+    color: var(--primary-color);
+    padding: 0.75rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.launchBtn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.riskAlerts {
+    padding: 1.5rem 2rem;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.alertHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.25rem;
+}
+
+.alertHeader h3 {
+    font-size: 1.1rem;
+    color: #ef4444;
+}
+
+.alertItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alertItem p {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.actionBtn {
+    color: #ef4444;
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .systemStatus {
+    text-align: left;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

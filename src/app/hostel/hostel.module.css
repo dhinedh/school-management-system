@@ -1,0 +1,244 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.statsCard {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.statsLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.statsValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 1.5rem;
+}
+
+.blocksSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 240px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.blockList {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockItem {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #f9f9fb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.blockItem:hover {
+    background: #fdfdff;
+}
+
+.blockIcon {
+    width: 44px;
+    height: 44px;
+    background: #f0f0f7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockMain {
+    flex: 1;
+}
+
+.blockName {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.blockMeta {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.blockStats {
+    text-align: right;
+    margin-right: 1.5rem;
+}
+
+.occupancyLabel {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+.occupancyValue {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.requestCard {
+    padding: 1.5rem;
+}
+
+.requestList {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.requestItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.reqTitle {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.reqStudent {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.statusBadge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.pending { background: #fff4e6; color: #fd7e14; }
+.resolved { background: #e6fcf5; color: #0ca678; }
+
+.viewAllBtn {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
+}
+
+.messCard {
+    padding: 1.5rem;
+}
+
+.insightHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.menuItem {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+}
+
+.mealType {
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.mealDesc {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.insightBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid, .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

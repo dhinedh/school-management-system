@@ -1,0 +1,222 @@
+.container {
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.topVitals {
+  margin-bottom: 2.5rem;
+}
+
+.vitalGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.vLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.vLine p {
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+}
+
+.vitalGrid strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tableHead {
+  display: grid;
+  grid-template-columns: 1fr 140px 140px 100px 100px;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 140px 140px 100px 100px;
+  padding: 1.25rem 1rem;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.assetCol {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.assetCol strong {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+.hubCol, .usageCol, .statusCol {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.statusCol {
+  font-weight: 700;
+}
+
+.actionCol {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.actionCol button {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.aiCard {
+  background: rgba(245, 158, 11, 0.05);
+  padding: 2rem;
+  border: 1px solid rgba(245, 158, 11, 0.1);
+}
+
+.asstHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.asstHeader h3 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+.aiCard p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.orderBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* System-Generated Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1.25rem;
+  }
+
+  .actions {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+  }
+
+  .actions button, .actions .btn {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .mainGrid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Specific column stacking for common patterns */
+  .leftCol, .rightCol {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+  }
+}

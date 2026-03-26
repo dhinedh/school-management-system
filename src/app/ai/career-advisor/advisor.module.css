@@ -1,0 +1,182 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.headerMain {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.iconBox {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.surveySection, .recommendations {
+    padding: 2rem;
+}
+
+.surveyContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.question p {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.analyzeBtn {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.recList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recItem {
+    padding: 1.25rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.recHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.fitScore {
+    margin-left: 10px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #10b981;
+    background: #ecfdf5;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.matchReason {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.gaps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.gapTag {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.collegeSection {
+    padding: 2rem;
+}
+
+.collegeHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.collegeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.collegeCard {
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.collegeCard strong {
+    font-size: 1rem;
+}
+
+.collegeCard span {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+    .mainGrid, .collegeGrid {
+        grid-template-columns: 1fr;
+    }
+}

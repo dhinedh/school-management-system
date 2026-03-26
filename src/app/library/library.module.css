@@ -1,0 +1,242 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.statsCard {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.statsLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.statsValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.catalogSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tableHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background: #fafafa;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 0.8rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bookInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bookCover {
+    width: 36px;
+    height: 44px;
+    background: #f0f0f5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.bookTitle {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.bookAuthor {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.isbn {
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.statusBadge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.available { background: #e6fcf5; color: #0ca678; }
+.borrowed { background: #fff5f5; color: #fa5252; }
+
+.borrowBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.borrowCard {
+    padding: 1.5rem;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.borrowList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.borrowItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.borrowStudent {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.borrowBook {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.borrowMeta {
+    text-align: right;
+}
+
+.borrowDue {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-bottom: 4px;
+}
+
+.statusTag {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.ontime { color: #10b981; }
+.overdue { background: #fee2e2; color: #b91c1c; }
+
+.aiInsights {
+    padding: 1.25rem;
+}
+
+.insightHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.insightText {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.insightBtn {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid, .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

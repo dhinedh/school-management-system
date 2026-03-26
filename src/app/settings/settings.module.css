@@ -1,0 +1,214 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.settingsGrid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.sidebar {
+    background: white;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.navItem:hover {
+    background: #f8f9fa;
+    color: var(--primary-color);
+}
+
+.navItem.active {
+    background: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contentCard {
+    padding: 2rem;
+}
+
+.contentCard h2 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+.formGroup input {
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formGroup input:focus {
+    border-color: var(--primary-color);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.addBtn {
+    background: var(--bg-primary);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.roleList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.roleItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.roleMain {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.roleMain strong {
+    font-size: 1rem;
+}
+
+.roleMain span {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.permList {
+    flex: 1;
+}
+
+.permTag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    background: #f1f3f5;
+    color: var(--text-tertiary);
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.editBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.auditCard {
+    padding: 1.5rem 2rem;
+}
+
+.auditHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+}
+
+.logList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logItem {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.logItem span {
+    color: var(--text-tertiary);
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .settingsGrid {
+        grid-template-columns: 1fr;
+    }
+}

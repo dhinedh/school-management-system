@@ -1,0 +1,219 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.eventsSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 240px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.eventList {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventItem {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #f9f9fb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.eventItem:hover {
+    background: #fdfdff;
+}
+
+.dateBox {
+    width: 54px;
+    height: 60px;
+    background: #f0f0f5;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.academic .dateDay { color: #4f46e5; }
+.sports .dateDay { color: #ef4444; }
+.cultural .dateDay { color: #f59e0b; }
+
+.dateDay {
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.dateMonth {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+}
+
+.eventMain {
+    flex: 1;
+}
+
+.eventTitle {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.eventMeta {
+    display: flex;
+    gap: 16px;
+    color: var(--text-tertiary);
+    font-size: 0.85rem;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.typeBadge {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.academic.typeBadge { background: #e0e7ff; color: #4f46e5; }
+.sports.typeBadge { background: #fee2e2; color: #ef4444; }
+.cultural.typeBadge { background: #fef3c7; color: #92400e; }
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.clubCard {
+    padding: 1.5rem;
+}
+
+.manageBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.clubList {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.clubItem {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.clubIcon {
+    width: 40px;
+    height: 40px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+}
+
+.clubName {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.clubMeta {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.sportsCard {
+    padding: 1.25rem;
+}
+
+.insightHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.insightText {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.insightBtn {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

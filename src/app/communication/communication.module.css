@@ -1,0 +1,273 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+}
+
+.announcementBoard, .messagingSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.viewAll {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.announcementList {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcementItem {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9f9fb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.announcementItem:hover {
+    background: #fdfdff;
+}
+
+.annHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.annTitle {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.priorityBadge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.high { background: #fee2e2; color: #b91c1c; }
+.medium { background: #fef3c7; color: #92400e; }
+.low { background: #f1f3f5; color: #495057; }
+
+.annMeta {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.messagingHeader {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    color: white;
+}
+
+.newChatBtn {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatList {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatSearch {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.chatSearch input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+.chatItem {
+    padding: 1rem;
+    display: flex;
+    gap: 12px;
+    border-bottom: 1px solid #f9f9fb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatItem:hover {
+    background: #fdfdff;
+}
+
+.activeChat {
+    background: #f0f7ff;
+    border-right: 4px solid var(--primary-color);
+}
+
+.chatAvatar {
+    width: 44px;
+    height: 44px;
+    background: #eee;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.chatInfo {
+    flex: 1;
+}
+
+.chatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.chatName {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.chatTime {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.chatFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatLastMsg {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+
+.unreadCount {
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.broadcastSection {
+    padding: 1.5rem 2rem;
+}
+
+.broadcastContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.broadcastContent h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: var(--primary-color);
+}
+
+.broadcastContent p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.broadcastStats {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bStat {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.bStat span {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    font-weight: 700;
+}
+
+.bStat strong {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.rechargeBtn {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

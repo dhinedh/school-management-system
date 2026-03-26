@@ -1,0 +1,315 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.examSection, .reportSection {
+  padding: 1.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.viewAll {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.examList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.examItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.examItem:hover {
+  transform: translateX(4px);
+  background: #eee;
+}
+
+.examIcon {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.examInfo {
+  flex: 1;
+}
+
+.examTitle {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.examMeta {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+
+.statusBadge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.published { background: #e6fcf5; color: #0ca678; }
+.inprogress { background: #e7f5ff; color: #228be6; }
+.upcoming { background: #fff4e6; color: #fd7e14; }
+
+.sectionDesc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.reportActions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filterGroup label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+}
+
+.filterGroup select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+}
+
+.generateBtn {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.aiFeature {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(26, 35, 126, 0.05);
+    border-radius: 12px;
+    border: 1px dashed var(--primary-light);
+}
+
+.aiTag {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.aiFeature p {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.markbookContainer {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tableHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tableTitle h2 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.selectionTag {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    font-weight: 600;
+}
+
+.tableActions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.aiCommentBtn {
+    background: var(--primary-glow);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.exportBtn {
+    color: var(--text-secondary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background: #fafafa;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.studentInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.markInput {
+    width: 60px;
+    padding: 6px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.markInput:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--secondary-light);
+}
+
+.total {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.gradeBadge {
+    background: #f0f0f7;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.rankBadge {
+    background: var(--secondary-light);
+    color: var(--secondary-dark);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

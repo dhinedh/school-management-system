@@ -1,0 +1,190 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerMain {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.iconBox {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+}
+
+.title {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.statsCard {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.statsLabel {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.statsValue {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.genSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.sectionHeader {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.syncBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.constraintList {
+    display: flex;
+    flex-direction: column;
+}
+
+.cItem {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.cInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cType {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cCount {
+    font-weight: 800;
+    color: var(--text-tertiary);
+}
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.draftCard {
+    padding: 1.5rem;
+}
+
+.draftDesc {
+    font-size: 0.85rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.scoreBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.scoreBox strong {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.scoreBox span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+.publishBtn {
+    background: var(--primary-color);
+    color: white;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.preferenceCard {
+    padding: 1.5rem;
+}
+
+.prefList {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.prefItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .mainGrid, .statsRow {
+    grid-template-columns: 1fr;
+  }
+}

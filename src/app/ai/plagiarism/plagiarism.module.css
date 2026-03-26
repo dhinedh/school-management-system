@@ -1,0 +1,178 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.headerMain {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.iconBox {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #ef4444, #f59e0b);
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.statsSection {
+    padding: 1.5rem;
+}
+
+.statsGrid {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.statItem strong {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.statItem span {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.scanListSection {
+    padding: 2rem;
+}
+
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f1f3f5;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 240px;
+}
+
+.search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.85rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    padding: 12px;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+}
+
+.table td {
+    padding: 16px 12px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 0.75rem;
+}
+
+.badge.high {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.badge.low {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.viewBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.manualScan {
+    padding: 2rem;
+}
+
+.manualHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.manualContent textarea {
+    width: 100%;
+    height: 150px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+.scanBtn {
+    background: white;
+    color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .mainGrid {
+        grid-template-columns: 1fr;
+    }
+}

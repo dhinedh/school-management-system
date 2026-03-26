@@ -1,0 +1,186 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsBtn {
+  color: var(--text-tertiary);
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cardDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.termSection, .gradeSection {
+  padding: 1.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.manageBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.termList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.termItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 12px;
+}
+
+.termName {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.termDates {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+
+.statusBadge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.completed { background: #e9ecef; color: #495057; }
+.active { background: #e7f5ff; color: #228be6; }
+.upcoming { background: #fdf2f2; color: #e03131; }
+
+.gradeTable {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gradeRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gradeName {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.gradeSub {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.capacityInfo {
+    width: 200px;
+}
+
+.capacityBar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.capacityText {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: right;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}

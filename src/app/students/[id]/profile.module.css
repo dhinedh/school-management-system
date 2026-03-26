@@ -1,0 +1,276 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.backBtn:hover {
+  color: var(--primary-color);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profileCard {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.avatarWrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.largeAvatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+  background: #f0f0f5;
+  border: 4px solid white;
+  box-shadow: var(--shadow-md);
+}
+
+.statusBadge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.active { background: #34c759; color: #34c759; }
+.withdrawn { background: #ff3b30; color: #ff3b30; }
+.graduated { background: #007aff; color: #007aff; }
+
+.studentName {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.studentIdCode {
+  font-family: monospace;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.infoItem strong {
+  text-transform: capitalize;
+}
+
+.contactCard, .parentCard {
+  padding: 1.5rem;
+}
+
+.contactCard h3, .parentCard h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.parentInfo {
+    background: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 12px;
+    position: relative;
+}
+
+.parentName {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.parentRelation {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.parentActions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 8px;
+}
+
+.contactBtn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.academicOverview {
+  padding: 1.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader h2 {
+  font-size: 1.2rem;
+}
+
+.viewMore {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.acadStat {
+  background: var(--bg-primary);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.statValue {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.historySection, .documentsSection {
+  padding: 1.5rem;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.historyItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f9f9fb;
+  border-radius: 10px;
+}
+
+.historyYear {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.historyStats {
+  display: flex;
+  gap: 20px;
+}
+
+.historyStat span {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+.docGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.docItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+  border: 1px solid #eeed;
+  border-radius: 12px;
+}
+
+.docName {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.docMeta {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+.downloadBtn, .uploadBtn {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

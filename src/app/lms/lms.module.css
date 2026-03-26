@@ -1,0 +1,246 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.topSection {
+    width: 100%;
+}
+
+.courseGrid {
+    padding: 0;
+    overflow: hidden;
+}
+
+.sectionHeader {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 260px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.courseItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.courseItem {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #f9f9fb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.courseItem:hover {
+    background: #fdfdff;
+}
+
+.courseIcon {
+    width: 50px;
+    height: 50px;
+    background: #f0f0f7;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courseMain {
+    flex: 1;
+}
+
+.courseTitle {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.courseMeta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+}
+
+.courseStat {
+    width: 200px;
+    margin-right: 2rem;
+}
+
+.progressBar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.progressText {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    font-weight: 700;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.assignmentSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.viewAll {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.assignmentList {
+    display: flex;
+    flex-direction: column;
+}
+
+.assignmentItem {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.asgnTitle {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.asgnMeta {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.asgnStats {
+    text-align: right;
+}
+
+.asgnCount {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.asgnLabel {
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.quizCard {
+    padding: 1.5rem;
+}
+
+.sidebarDesc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.quizBtn {
+    background: var(--primary-color);
+    color: white;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.resourceCard {
+    padding: 1.5rem;
+}
+
+.insightHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.resourceList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.resourceItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.resourceItem:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

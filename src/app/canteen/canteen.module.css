@@ -1,0 +1,227 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.statsCard {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.statsLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.statsValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.menuSection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 240px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItem {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #f9f9fb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menuItem:hover {
+    background: #fdfdff;
+}
+
+.itemIcon {
+    width: 44px;
+    height: 44px;
+    background: #f0f0f7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemMain {
+    flex: 1;
+}
+
+.itemName {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.itemMeta {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.itemStock {
+    margin-right: 1.5rem;
+}
+
+.stockBadge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.high { background: #e6fcf5; color: #0ca678; }
+.medium { background: #fff4e6; color: #fd7e14; }
+.low { background: #fff5f5; color: #fa5252; }
+.none { background: #f1f3f5; color: #adb5bd; }
+
+.statusBadge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.available { background: #e7f5ff; color: #228be6; }
+.outofstock { background: #f1f3f5; color: #adb5bd; }
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ordersCard {
+    padding: 1.5rem;
+}
+
+.orderList {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f9f9fb;
+}
+
+.orderStudent {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.orderDetail {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.orderStatus {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.pickedup { color: #10b981; }
+.processing { color: #3b82f6; }
+
+.walletCard {
+    padding: 1.5rem;
+}
+
+.insightHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.insightText {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.insightBtn {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid, .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
