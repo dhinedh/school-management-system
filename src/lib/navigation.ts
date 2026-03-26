@@ -4,7 +4,7 @@ import {
   Calendar, 
   GraduationCap, 
   DollarSign, 
-  UserSquare2, 
+  SquareUserRound, 
   MessageSquare, 
   Library, 
   Bus, 
@@ -16,11 +16,11 @@ import {
   FileText,
   UserCheck,
   LifeBuoy,
-  Users2,
+  UsersRound,
   Globe,
   Zap,
   Mic,
-  BarChart3,
+  ChartColumn,
   ShieldAlert,
   Smartphone,
   Target,
@@ -35,7 +35,7 @@ import {
   MapPin,
   Wallet,
   FileDigit,
-  CalendarCheck2,
+  CalendarCheck,
   Cpu,
   Bookmark,
   FileSpreadsheet,
@@ -44,7 +44,7 @@ import {
   Rocket,
   ShieldPlus,
   Package,
-  GanttChart,
+  ChartGantt,
   Eye,
   Lock,
   Boxes
@@ -62,7 +62,7 @@ export const navigationByRole: Record<UserRole, any[]> = {
         { name: "Strategic Dashboard", href: "/dashboard/admin", icon: Rocket },
         { name: "Global Franchise", href: "/franchise", icon: Globe },
         { name: "Digital Twin 2.0", icon: BrainCircuit, href: "/analytics/digital-twin" },
-        { name: "Growth Strategy", href: "/admin/strategy", icon: GanttChart },
+        { name: "Growth Strategy", href: "/admin/strategy", icon: ChartGantt },
       ]
     },
     {
@@ -78,7 +78,7 @@ export const navigationByRole: Record<UserRole, any[]> = {
       items: [
         { name: "Financial Intelligence", icon: DollarSign, href: "/finance" },
         { name: "Fee Optimizer", icon: PieChart, href: "/finance/optimizer" },
-        { name: "HR & Staff Engine", icon: UserSquare2, href: "/hr" },
+        { name: "HR & Staff Engine", icon: SquareUserRound, href: "/hr" },
         { name: "Smart Inventory", icon: Boxes, href: "/admin/inventory" },
       ]
     },
@@ -133,7 +133,7 @@ export const navigationByRole: Record<UserRole, any[]> = {
       title: "Connect",
       items: [
         { name: "Communication", icon: MessageSquare, href: "/communication" },
-        { name: "HR Profile", icon: UserSquare2, href: "/hr" },
+        { name: "HR Profile", icon: SquareUserRound, href: "/hr" },
       ]
     }
   ],
@@ -186,7 +186,7 @@ export const navigationByRole: Record<UserRole, any[]> = {
       title: "Daily Logistics",
       items: [
         { name: "Live Bus Tracker", href: "/parent/bus", icon: MapPin },
-        { name: "PTM Scheduler", href: "/parent/ptm", icon: CalendarCheck2 },
+        { name: "PTM Scheduler", href: "/parent/ptm", icon: CalendarCheck },
         { name: "Canteen Wallet", href: "/parent/wallet", icon: Wallet },
       ]
     },

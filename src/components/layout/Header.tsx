@@ -4,7 +4,7 @@ import {
   Search,
   Bell,
   Settings,
-  HelpCircle,
+  CircleHelp,
   Mic,
   Zap,
   ChevronDown,
