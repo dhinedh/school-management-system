@@ -38,7 +38,17 @@
 
 @media (max-width: 1024px) {
   .sidebar {
+    width: 85%;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    color: var(--text-primary);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
     transform: translateX(-100%);
+    box-shadow: 20px 0 60px rgba(0, 0, 0, 0.15);
+    z-index: 2005; /* Must be higher than BottomNav (1000) */
   }
 
   .sidebar.open {
@@ -49,11 +59,67 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .logoTitle {
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .logoArea {
     justify-content: space-between;
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .navSection {
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .navItem {
+    color: var(--text-secondary) !important;
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+    background: transparent;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Force child icon color parity */
+  .navItem svg, .navItem span {
+    color: inherit;
+  }
+
+  .navItem:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--primary-color) !important;
+  }
+
+  .sectionTitle {
+    color: var(--text-tertiary) !important;
+    margin: 2.5rem 1.5rem 1rem;
+  }
+
+  .activeItem {
+    background: var(--primary-color) !important;
+    color: white !important;
+    box-shadow: 0 8px 15px rgba(99, 102, 241, 0.2);
+  }
+
+  .activeItem svg, .activeItem span {
+    color: white !important;
+  }
+
+  .footer {
+    padding: 2rem 1.5rem calc(2.5rem + var(--mobile-nav-height));
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 }
 

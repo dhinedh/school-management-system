@@ -111,6 +111,7 @@
   margin-bottom: 1.5rem;
   background: linear-gradient(to right, #ffffff, #cbd5e1);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.02em;
 }
@@ -376,10 +377,9 @@
 }
 
 .rolesGrid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
-  justify-content: center;
 }
 
 .rolePill {
@@ -406,6 +406,18 @@
 
 .roleIcon {
   color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.hint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /* Animations */
@@ -421,12 +433,7 @@
   }
   
   .leftPanel {
-    flex: none;
-    padding: 3rem 2rem;
-    text-align: center;
-    align-items: center;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: none;
   }
 
   .logoBox {
@@ -449,7 +456,31 @@
   }
   
   .rightPanel {
-    padding: 3rem 1.5rem;
+    flex: 1;
+    width: 100%;
+    padding: 2rem 1.25rem;
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+
+  .loginCard {
+    max-width: 100%;
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+  }
+
+  .logoIconMobile {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
   }
 
   .topNav {

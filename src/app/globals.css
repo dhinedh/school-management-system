@@ -120,7 +120,7 @@ button:active {
 @media (max-width: 1024px) {
   .main-content {
     margin-left: 0;
-    padding: 1.5rem 1rem !important; /* Override inline padding from layout.tsx */
+    padding: 1.5rem 1rem calc(1.5rem + var(--mobile-nav-height)) !important; 
   }
 
   .hide-mobile {
@@ -134,8 +134,8 @@ button:active {
   /* Smart Matching for CSS Modules (RESTRICTED TO MAIN CONTENT) */
   main [class*="header"] {
     flex-direction: column;
-    align-items: flex-start !important;
-    gap: 1rem;
+    align-items: stretch !important;
+    gap: 1.25rem;
   }
 
   main [class*="actions"] {

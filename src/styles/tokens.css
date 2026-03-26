@@ -44,6 +44,9 @@
   /* Layout Constants */
   --sidebar-width: 280px;
   --header-height: 80px;
+  --mobile-header-height: 64px;
+  --mobile-nav-height: 72px;
+  --mobile-padding: 1.25rem;
 
   /* Breakpoints */
   --breakpoint-sm: 640px;
@@ -107,4 +110,22 @@
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
+}
+
+.touch-active:active {
+  transform: scale(0.96);
+  opacity: 0.9;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .mobile-only {
+    display: block !important;
+  }
+  .desktop-only {
+    display: none !important;
+  }
 }

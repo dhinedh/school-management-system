@@ -8,10 +8,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  position: sticky;
-  top: 0;
   z-index: 900;
   margin-bottom: 1rem;
+  transition: all var(--transition-smooth);
 }
 
 .mobileMenuBtn {
@@ -26,40 +25,24 @@
 @media (max-width: 1024px) {
   .header {
     padding: 0 1rem;
-    height: 70px; /* Slightly shorter on mobile */
-    flex-direction: row !important; /* Keep horizontal */
-    align-items: center !important;
+    height: var(--mobile-header-height);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
   
   .mobileMenuBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none; /* Hidden because we use Bottom Nav for Menu trigger */
   }
 
   .actions {
-    gap: 0.5rem !important;
+    gap: 0.75rem !important;
   }
 
-  .userProfile {
-    padding-left: 0.5rem !important;
-    gap: 0.5rem !important;
-    border-left: none !important;
-  }
-
-  .utilityIcons {
-    display: none !important; /* Hide bell and wifi on small screens to save space */
-  }
-
-  .iconBtn {
-    width: 36px !important;
-    height: 36px !important;
-  }
-
-  .avatar {
-    width: 36px !important;
-    height: 36px !important;
-    font-size: 0.9rem !important;
+  .searchArea {
+    display: none;
   }
 }
 

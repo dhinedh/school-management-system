@@ -109,6 +109,9 @@ export default function LoginPage() {
 
         <div className={styles.loginCard}>
           <div className={styles.loginHeader}>
+             <div className={`${styles.logoIconMobile} mobile-only`}>
+                <Layout size={32} />
+             </div>
              <h2>Welcome Back</h2>
              <p>Sign in to your centralized dashboard</p>
           </div>

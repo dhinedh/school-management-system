@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import Header from "@/components/layout/Header";
+import MobileBottomNav from "@/components/layout/MobileBottomNav";
 import Chatbot from "@/components/ai/chatbot/Chatbot";
 import { AuthProvider, useAuth } from "@/context/AuthContext";
 import { usePathname, useRouter } from "next/navigation";
@@ -47,6 +48,7 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
           <main className="animate-entry" style={{ padding: '2rem 1.5rem' }}>
             {children}
           </main>
+          <MobileBottomNav />
         </div>
       </div>
     );
