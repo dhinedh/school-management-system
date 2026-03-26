@@ -39,7 +39,7 @@ export default function DropoutRiskPage() {
             <p className={styles.statsValue}>1,240</p>
          </div>
          <div className={`${styles.statsCard} card ${styles.highRisk}`}>
-            <p className={styles.statsLabel}>High Risk (&gt;70%)</p>
+            <p className={styles.statsLabel}>High Risk {'>'} 70%</p>
             <p className={styles.statsValue}>12</p>
          </div>
          <div className={`${styles.statsCard} card`}>

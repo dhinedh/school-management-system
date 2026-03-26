@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { useAuth, UserRole } from "@/context/AuthContext";
 import { useSidebar } from "@/context/SidebarContext";
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const { role, setRole, user } = useAuth();

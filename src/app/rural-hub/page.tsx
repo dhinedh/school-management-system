@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Marked as client component to handle localization hooks
 import { 
   Users, 
   BookOpen, 

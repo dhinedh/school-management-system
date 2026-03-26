@@ -6,7 +6,7 @@ import { navigationByRole } from "@/lib/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { useSidebar } from "@/context/SidebarContext";
 import { LogOut, Layout, X } from "lucide-react";
-import styles from "./sidebar.module.css";
+import styles from "./Sidebar.module.css";
 
 export default function Sidebar() {
   const { role, logout } = useAuth();
