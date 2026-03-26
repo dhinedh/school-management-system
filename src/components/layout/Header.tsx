@@ -3,11 +3,7 @@
 import {
   Search,
   Bell,
-  Settings,
-  CircleHelp,
   Mic,
-  Zap,
-  ChevronDown,
   Wifi,
   Menu,
   X

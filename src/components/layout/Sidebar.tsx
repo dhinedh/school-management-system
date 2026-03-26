@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { navigationByRole } from "@/lib/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { useSidebar } from "@/context/SidebarContext";
-import { LogOut, Layout, X } from "lucide-react";
+import { LogOut, PanelsTopLeft, X } from "lucide-react";
 import styles from "./Sidebar.module.css";
 
 export default function Sidebar() {
@@ -20,7 +20,7 @@ export default function Sidebar() {
       <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
         <div className={styles.logoArea}>
           <div className={styles.logoIcon}>
-            <Layout size={24} color="var(--primary-color)" />
+            <PanelsTopLeft size={24} color="var(--primary-color)" />
           </div>
           <span className={styles.logoTitle}>SmartOS Pro</span>
           <button className={styles.closeBtn} onClick={close}>
