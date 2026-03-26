@@ -8,7 +8,8 @@ import {
   Music, 
   Palette, 
   ChevronRight,
-  Clock
+  Clock,
+  Settings
 } from "lucide-react";
 import styles from "./events.module.css";
 

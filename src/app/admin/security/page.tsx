@@ -4,7 +4,7 @@ import {
   Lock, 
   UserCheck, 
   Camera, 
-  AlertSquare, 
+  AlertCircle, 
   Clock, 
   Search, 
   Maximize2,
@@ -45,7 +45,7 @@ export default function CampusSecurityHub() {
          <aside className={styles.securitySidebar}>
             <div className={`${styles.alertCard} glass`}>
                <div className={styles.alertHeader}>
-                  <AlertSquare size={20} color="#ef4444" />
+                  <AlertCircle size={20} color="#ef4444" />
                   <h3>Security Alerts</h3>
                </div>
                <div className={styles.alertItem}>

@@ -1,0 +1,201 @@
+﻿
+> sms@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.1 (Turbopack)
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\nvm4w\nodejs/node.
+exe" "C:\nvm4w\nodejs/node
+_modules/npm/bin/np ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (:  
+  String) [], RemoteExc   
+ eption
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+> Build error occurred
+Error: Turbopack build 
+failed with 3 errors:
+./src/app/ai/dropout-risk/
+page.tsx:42:57
+Unexpected token. Did you 
+mean `{'>'}` or `&gt;`?
+  [90m40 |[0m          
+</div>
+  [90m41 |[0m          
+<div className={[32m`[0m
+${styles.statsCard[32m} 
+card [0m${styles.highRisk
+[32m}`[0m}>
+[31m[1m>[0m [90m42 
+|[0m             <p class
+Name={styles.statsLabel}>
+[33mHigh[0m 
+[33mRisk[0m 
+(>[35m70[0m%)</p>
+  [90m   |[0m           
+                          
+                    
+[31m[1m^[0m
+  [90m43 |[0m           
+  <p className={styles.sta
+tsValue}>[35m12[0m</p>
+  [90m44 |[0m          
+</div>
+  [90m45 |[0m          
+<div className={[32m`[0m
+${styles.statsCard[32m} 
+card`[0m}>
+
+Parsing ecmascript source 
+code failed
+
+
+./src/hooks/useLocalizatio
+n.ts:1:10
+You're importing a module 
+that depends on 
+`useState` into a React 
+Server Component module. 
+This API is only 
+available in Client 
+Components. To fix, mark 
+the file (or its parent) 
+with the `"use client"` 
+directive.
+    Learn more: https://ne
+xtjs.org/docs/app/api-refe
+rence/directives/use-clien
+t
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+useState, useCallback } 
+[36mfrom[0m 
+[32m'react'[0m;
+  [90m  |[0m          
+[31m[1m^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m 
+[36mconst[0m 
+translations = {
+  [90m4 |[0m   en: {
+
+Ecmascript file had an 
+error
+
+Import trace:
+  Server Component:
+    ./src/hooks/useLocaliz
+ation.ts
+    ./src/app/rural-hub/pa
+ge.tsx
+
+
+./src/app/admin/security/p
+age.tsx:1:1
+Export AlertSquare 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m 1 
+|[0m [36mimport[0m { 
+  [90m   |[0m 
+[31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m 2 
+|[0m   
+[33mShieldPlus[0m, 
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 3 
+|[0m   [33mEye[0m, 
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m 4 
+|[0m   [33mLock[0m, 
+  [90m   |[0m 
+[31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m 5 
+|[0m   
+[33mUserCheck[0m, 
+  [90m   |[0m 
+[31m[1m^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 6 
+|[0m   [33mCamera[0m, 
+  [90m   |[0m 
+[31m[1m^^^^^^^^^^[0m
+[31m[1m>[0m [90m 7 
+|[0m   
+[33mAlertSquare[0m, 
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 8 
+|[0m   [33mClock[0m, 
+  [90m   |[0m 
+[31m[1m^^^^^^^^^[0m
+[31m[1m>[0m [90m 9 
+|[0m   [33mSearch[0m, 
+  [90m   |[0m 
+[31m[1m^^^^^^^^^^[0m
+[31m[1m>[0m [90m10 
+|[0m   
+[33mMaximize2[0m,
+  [90m   |[0m 
+[31m[1m^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m11 
+|[0m   [33mBell[0m,
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m12 
+|[0m   
+[33mFingerprint[0m
+  [90m   |[0m 
+[31m[1m^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 
+|[0m } [36mfrom[0m 
+[32m"lucide-react"[0m;
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m14 |[0m 
+[36mimport[0m styles 
+[36mfrom[0m [32m"./secu
+rity.module.css"[0m;
+  [90m15 |[0m
+  [90m16 |[0m 
+[36mexport[0m 
+[36mdefault[0m 
+[36mfunction[0m [33mCam
+pusSecurityHub[0m() {
+
+The export AlertSquare 
+was not found in module [p
+roject]/node_modules/lucid
+e-react/dist/esm/lucide-re
+act.js [app-rsc] 
+(ecmascript).
+Did you mean to import 
+UserSquare?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+    at <unknown> (./src/ap
+p/ai/dropout-risk/page.tsx
+:42:57)
+    at <unknown> (./src/ho
+oks/useLocalization.ts:1:1
+0)
+    at <unknown> (./src/ap
+p/admin/security/page.tsx:
+1:1)
